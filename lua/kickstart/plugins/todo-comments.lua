@@ -9,7 +9,14 @@ return {
     ---@module 'todo-comments'
     ---@type TodoOptions
     ---@diagnostic disable-next-line: missing-fields
-    opts = { signs = false },
+    opts = {
+      signs = false,
+      keywords = {
+        IMPORTANT = {
+          color = "warning",
+        }
+      },
+    },
   },
 }
 -- vim: ts=2 sts=2 sw=2 et

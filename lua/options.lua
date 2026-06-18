@@ -69,4 +69,8 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- set the column ruler
+vim.o.ruler = true
+vim.o.colorcolumn = '120'
+
 -- vim: ts=2 sts=2 sw=2 et
