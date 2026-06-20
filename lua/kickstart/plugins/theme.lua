@@ -2,15 +2,12 @@
 ---@type LazySpec
 return {
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'gbprod/nord.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    opts = {
-      flavour = 'mocha',
-    },
+    opts = {},
     config = function (_, opts)
-      require('catppuccin').setup(opts)
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      require('nord').setup(opts)
+      vim.cmd.colorscheme('nord')
     end
   },
 }
